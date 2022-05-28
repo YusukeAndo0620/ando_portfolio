@@ -1,0 +1,76 @@
+html {
+    min-height: 100%;
+}
+
+.Main {
+    @extend .text--title-2;
+    top: 50px;
+    position: absolute;
+    min-height: 100%;
+    padding-bottom: 64px;
+    width: -webkit-fill-available;
+    background-color: $color--background-main;
+    .Main--content {
+        min-height: 600px;
+        width: -webkit-fill-available;
+        z-index: 1;
+        padding: 0 64px 64px 64px;
+        .MainContentImgArea {
+            .MainContentImg {
+                width: 100%;
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+    &.MainContennt--modal_open {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 0.5;
+    }
+}
+
+.Main {
+    animation-name: mainFadeIn;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    @keyframes mainFadeIn {
+        0% {
+            opacity: 0.1;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+
+/* 959px以下に適用されるCSS（タブレット用） */
+
+@media screen and (max-width: 959px) {}
+
+
+/* 480px以下に適用されるCSS（スマホ用） */
+
+@media screen and (max-width: 480px) {
+    .Main {
+        top: 0;
+        padding-bottom: 24px;
+        .Main--content {
+            min-height: 1200px;
+            width: -webkit-fill-available;
+            z-index: 1;
+            padding: 0 16px 16px 16px;
+            .MainContentImgArea {
+                .MainContentImg {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}

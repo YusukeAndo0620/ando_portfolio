@@ -1,0 +1,58 @@
+:root {
+    @media (prefers-color-schema: light) {
+        --background--main: #fff;
+        --background--content-main: rgb(228, 224, 224);
+        --text--main: #4a4a4a;
+        --text--gray: #a1a1a1;
+        --text--blue: #50b9d7;
+        --text--light--blue: #a2e2f3;
+        --text--white-blue: #ddfcff;
+        --text--green: #12e242;
+        --text--deep-blue: #0c5ed8;
+    }
+    @media (prefers-color-schema: dark) {
+        --background--main: #1f1f1f;
+        --background--content-main: rgb(95, 95, 95);
+        --text--main: #fff;
+        --text--gray: #a1a1a1;
+        --text--blue: #50b9d7;
+        --text--light--blue: #a2e2f3;
+        --text--white-blue: #627272;
+        --text--green: #12e242;
+        --text--deep-blue: #0c5ed8;
+    }
+}
+
+:root.light-mode {
+    --background--main: #fff;
+    --background--content-main: rgb(228, 224, 224);
+    --text--main: #4a4a4a;
+    --text--gray: #a1a1a1;
+    --text--blue: #50b9d7;
+    --text--light--blue: #a2e2f3;
+    --text--white-blue: #ddfcff;
+    --text--green: #12e242;
+    --text--deep-blue: #0c5ed8;
+}
+
+:root.dark-mode {
+    --background--main: #1f1f1f;
+    --background--content-main: rgb(95, 95, 95);
+    --text--main: #fff;
+    --text--gray: #a1a1a1;
+    --text--blue: #50b9d7;
+    --text--light--blue: #a2e2f3;
+    --text--white-blue: #627272;
+    --text--green: #12e242;
+    --text--deep-blue: #0c5ed8;
+}
+
+$color--background-main: var(--background--main);
+$color--background-content--main: var(--background--content-main);
+$color-text--main: var(--text--main);
+$color-gray--main: var(--text--gray);
+$color-blue--main: var(--text--blue);
+$color-light-blue--main: var(--text--light--blue);
+$color-white-blue--main: var(--text--white-blue);
+$color-green--main: var(--text--green);
+$color-deep-blue--main: var(--text--deep-blue);

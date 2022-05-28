@@ -1,0 +1,144 @@
+.SkillContentArea {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    .SkillArea {
+        width: 28%;
+        border: 1px solid $color-text--main;
+        padding: 16px;
+        margin: 16px auto;
+        .SkillHeader {
+            margin-bottom: 16px;
+            .SkillHeader__title {
+                display: flex;
+                justify-content: center;
+                .SkillHeader__title-icon {
+                    margin: 0 8px;
+                }
+                .SkillHeader__title-txt {}
+            }
+            .SkillHeader__description {
+                @extend .text--title-5;
+                margin-top: 8px;
+            }
+        }
+        .SkillContent {
+            @extend .text--title-5;
+            .SkillContentHeader {
+                display: flex;
+                padding: 8px 8px 16px 8px;
+                .SkillContentHeader__label {
+                    justify-content: center;
+                    width: 40%;
+                }
+                .SkillContentHeader__experience {
+                    justify-content: center;
+                    width: 20%;
+                }
+                .SkillContentHeader__level {
+                    justify-content: center;
+                    width: 40%;
+                }
+            }
+            .SkillContentItem {
+                display: flex;
+                padding: 0 8px;
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+                .SkillContentItem__label {
+                    width: 40%;
+                    justify-content: center;
+                }
+                .SkillContentItem__experience {
+                    width: 20%;
+                    justify-content: center;
+                }
+                .SkillContentItem__level {
+                    display: flex;
+                    margin: 0 auto;
+                    .Icon {
+                        margin: 1px 0;
+                    }
+                }
+            }
+        }
+    }
+    .SkillDescriptionArea {
+        width: 100%;
+        .SkillDescriptionContent {
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0 24px;
+            border-right: 1px solid $color-text--main;
+            border-left: 1px solid $color-text--main;
+            border-radius: 8px;
+            .SkillDescriptionContent__item {
+                display: flex;
+                margin: 8px 0;
+                .SkillDescriptionContentItem__icon {
+                    display: flex;
+                    width: 100px;
+                }
+                .SkillDescriptionContentItem__txt {
+                    @extend .text--title-5;
+                    span {
+                        float: left;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 480px以下に適用されるCSS（スマホ用） */
+
+@media screen and (max-width: 480px) {
+    .SkillContentArea {
+        .SkillArea {
+            width: 80%;
+            padding: 8px;
+            margin: 8px auto;
+            .SkillHeader {
+                .SkillHeader__title {
+                    align-items: center;
+                    .SkillHeader__title-txt {
+                        font-size: 12px;
+                    }
+                }
+                .SkillHeader__description {
+                    font-size: 10px;
+                }
+            }
+            .SkillContent {
+                font-size: 10px;
+                .SkillContentHeader {
+                    font-size: 10px;
+                    padding: 0px 0px 16px 0px;
+                }
+                .SkillContentItem {
+                    padding: 0;
+                }
+            }
+        }
+        .SkillDescriptionArea {
+            .SkillDescriptionContent {
+                padding: 0 8px;
+                .SkillDescriptionContent__item {
+                    .SkillDescriptionContentItem__icon {
+                        width: 70px;
+                        .Icon {
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                    .SkillDescriptionContentItem__txt {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

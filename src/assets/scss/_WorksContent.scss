@@ -1,0 +1,395 @@
+.Content {
+    .WorksContentArea {
+        display: flex;
+        .WorksContentMenu {
+            height: 580px;
+            min-width: 240px;
+            overflow-y: scroll;
+            background-color: $color-white-blue--main;
+            border-radius: 20px;
+            &.WorksContentMenu--no_img {
+                height: auto;
+            }
+            .WorksContentMenu__item {
+                padding: 16px 16px 0 16px;
+                .WorksContentDetail__img {
+                    img {
+                        height: 150px;
+                        object-fit: contain;
+                        opacity: 0.5;
+                        border: 0.5px solid;
+                        &.selected {
+                            opacity: 1;
+                            border: 1px solid $color-deep-blue--main;
+                        }
+                    }
+                     :hover {
+                        opacity: 1;
+                        cursor: pointer;
+                        border: 1px solid $color-deep-blue--main;
+                    }
+                }
+            }
+        }
+        .WorksContentDetailArea {
+            width: 100%;
+            .WorksContentDetail {
+                .WorksContentDetail__content {
+                    width: 70%;
+                    height: auto;
+                    margin: 0 auto;
+                    &.WorksContentDetail__content--no_img {
+                        width: 80%;
+                        // max-height: 580px;
+                    }
+                    .WorksContentDetail__img {
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                            border: 0.1px solid;
+                        }
+                    }
+                    .WorksContentDetailStack {
+                        display: flex;
+                        margin: 16px 0 16px 0;
+                        text-align: left;
+                        @extend .text--title-5;
+                        &.WorksContentDetailStack--no_md_top {
+                            margin-top: 0px;
+                        }
+                        .WorksContentDetailStack__title {
+                            width: 15%;
+                            margin-right: 36px;
+                            font-weight: bold;
+                        }
+                        .WorksContentDetailStack__content {
+                            width: 85%;
+                            .WorksContentDetail__title {
+                                .title {
+                                    padding-bottom: 8px;
+                                }
+                                .caption {
+                                    @extend .text--title-6__caption;
+                                }
+                            }
+                            .WorksContentDetail__discription {
+                                text-align: left;
+                                .WorksContentDetail__discription--text {
+                                    @extend .text--title-5;
+                                }
+                            }
+                            .WorksContentDetail__period {
+                                text-align: left;
+                                .WorksContentDetail__period--text {
+                                    @extend .text--title-5;
+                                }
+                            }
+                        }
+                    }
+                    .WorksContentDetailStack--vertical {
+                        @extend .text--title-5;
+                        margin: 16px 0 16px 0;
+                        text-align: left;
+                        .WorksContentDetailStack__title--vertical {
+                            width: 100%;
+                            font-weight: bold;
+                        }
+                        .WorksContentDetailStack__achievement-description {
+                            width: 100%;
+                            margin-top: 8px;
+                            @extend .text--title-6__caption;
+                        }
+                        .WorksContentDetailStack__content--vertical {
+                            //開発フェーズ
+                            .WorksContentDevelopmentPhaseArea {
+                                margin-top: 16px;
+                                .WorksContentDevelopmentPhase__content {
+                                    @extend .text--title-5;
+                                    .DevelopmentPhaseTable {
+                                        text-align: left;
+                                        border-collapse: collapse;
+                                        position: relative;
+                                        width: 100%;
+                                        @extend .text--title-6;
+                                        .DevelopmentPhaseTableHeader,
+                                        .DevelopmentPhase {
+                                            line-height: 30px;
+                                            border-bottom: 1px solid $color-deep-blue--main;
+                                        }
+                                        .DevelopmentPhaseTableHeader {
+                                            display: flex;
+                                            .DevelopmentPhaseTable__header {
+                                                width: calc(100% / 8);
+                                                text-align: center;
+                                            }
+                                        }
+                                        .DevelopmentPhaseTableContent {
+                                            .DevelopmentPhase {
+                                                display: flex;
+                                                .DevelopmentPhaseItem {
+                                                    display: flex;
+                                                    height: 30px;
+                                                    width: calc(100% / 8);
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    .DevelopmentPhaseItem__on {
+                                                        width: 16px;
+                                                        height: 16px;
+                                                        background-color: $color--background-main;
+                                                        border-radius: 50%;
+                                                        border: 1px solid $color-deep-blue--main;
+                                                        color: $color-deep-blue--main;
+                                                        text-align: center;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            //実績
+                            .WorksContentAchievementArea {
+                                margin-top: 8px;
+                                .WorksContentAchievement__content {
+                                    @extend .text--title-5;
+                                    .AchievementTable {
+                                        text-align: left;
+                                        border-collapse: collapse;
+                                        position: relative;
+                                        width: 100%;
+                                        @extend .text--title-6;
+                                        .AchievementTableHeader,
+                                        .AchievementList {
+                                            line-height: 30px;
+                                            border-bottom: 1px solid $color-deep-blue--main;
+                                        }
+                                        .AchievementTableHeader {
+                                            display: flex;
+                                            .AchievementTable__header {
+                                                &:first-child {
+                                                    width: 35%;
+                                                }
+                                                &:nth-child(2) {
+                                                    width: 50%;
+                                                    padding-right: 4px;
+                                                }
+                                            }
+                                        }
+                                        .AchievementTableContent {
+                                            overflow-y: scroll;
+                                            .AchievementList {
+                                                display: flex;
+                                                .AchievementList--label,
+                                                .AchievementList--description {
+                                                    width: fit-content;
+                                                }
+                                                .AchievementList--label {
+                                                    width: 35%;
+                                                }
+                                                .AchievementList--description {
+                                                    width: 50%;
+                                                    padding-right: 4px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 480px以下に適用されるCSS（スマホ用） */
+
+@media screen and (max-width: 480px) {
+    .Content {
+        .WorksContentArea {
+            display: block;
+            height: fit-content;
+            .WorksContentMenu {
+                display: flex;
+                height: fit-content;
+                width: 100%;
+                overflow-x: scroll;
+                background-color: $color--background-main;
+                border-radius: 20px;
+                &.WorksContentMenu--no_img {
+                    height: auto;
+                    min-width: 240px;
+                }
+                .WorksContentMenu__item {
+                    padding: 16px;
+                    .WorksContentDetail__img {
+                        img {
+                            height: 100px;
+                            object-fit: contain;
+                            opacity: 0.5;
+                            border: 0.5px solid;
+                        }
+                    }
+                }
+            }
+            .WorksContentDetailArea {
+                .WorksContentDetail {
+                    .WorksContentDetail__content {
+                        &.WorksContentDetail__content--no_img {
+                            width: 100%;
+                            min-height: unset;
+                            height: fit-content;
+                        }
+                        .WorksContentDetailStack {
+                            margin: 16px 0 16px 0;
+                            text-align: left;
+                            @extend .text--title-5;
+                            font-size: 10px;
+                            .WorksContentDetailStack__content {
+                                width: 85%;
+                                .WorksContentDetail__title {
+                                    .title {
+                                        padding-bottom: 8px;
+                                    }
+                                    .caption {
+                                        @extend .text--title-6__caption;
+                                        font-size: 10px;
+                                    }
+                                }
+                                .WorksContentDetail__discription {
+                                    text-align: left;
+                                    .WorksContentDetail__discription--text {
+                                        @extend .text--title-5;
+                                        font-size: 10px;
+                                    }
+                                }
+                                .WorksContentDetail__period {
+                                    text-align: left;
+                                    .WorksContentDetail__period--text {
+                                        @extend .text--title-5;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                        .WorksContentDetailStack--vertical {
+                            @extend .text--title-5;
+                            font-size: 10px;
+                            .WorksContentDetailStack__achievement-description {
+                                font-size: 10px;
+                            }
+                            .WorksContentDetailStack__content--vertical {
+                                //開発フェーズ
+                                .WorksContentDevelopmentPhaseArea {
+                                    margin-top: 16px;
+                                    .WorksContentDevelopmentPhase__content {
+                                        @extend .text--title-5;
+                                        font-size: 10px;
+                                        .DevelopmentPhaseTable {
+                                            display: flex;
+                                            justify-content: center;
+                                            margin: 0;
+                                            @extend .text--title-6;
+                                            font-size: 8px;
+                                            .DevelopmentPhaseTableHeader,
+                                            .DevelopmentPhase {
+                                                line-height: 20px;
+                                                border-bottom: none;
+                                            }
+                                            .DevelopmentPhaseTableHeader {
+                                                display: block;
+                                                width: 40%;
+                                                .DevelopmentPhaseTable__header {
+                                                    width: auto;
+                                                    text-align: left;
+                                                    border-bottom: 1px solid $color-deep-blue--main;
+                                                    padding-left: 16px;
+                                                    &:first-child {
+                                                        border-top: 1px solid $color-deep-blue--main;
+                                                    }
+                                                }
+                                            }
+                                            .DevelopmentPhaseTableContent {
+                                                width: 10%;
+                                                .DevelopmentPhase {
+                                                    display: block;
+                                                    .DevelopmentPhaseItem {
+                                                        display: flex;
+                                                        height: 20px;
+                                                        width: auto;
+                                                        justify-content: left;
+                                                        align-items: center;
+                                                        border-bottom: 1px solid $color-deep-blue--main;
+                                                        &:first-child {
+                                                            border-top: 1px solid $color-deep-blue--main;
+                                                        }
+                                                        .DevelopmentPhaseItem__on {
+                                                            width: 10px;
+                                                            height: 10px;
+                                                            background-color: $color--background-main;
+                                                            border-radius: 50%;
+                                                            border: 1px solid $color-deep-blue--main;
+                                                            color: $color-deep-blue--main;
+                                                            text-align: center;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                //実績
+                                .WorksContentAchievementArea {
+                                    .WorksContentAchievement__content {
+                                        @extend .text--title-5;
+                                        font-size: 10px;
+                                        .AchievementTable {
+                                            @extend .text--title-6;
+                                            font-size: 10px;
+                                            .AchievementTableHeader,
+                                            .AchievementList {
+                                                line-height: 20px;
+                                                border-bottom: 1px solid $color-deep-blue--main;
+                                            }
+                                            .AchievementTableHeader {
+                                                .AchievementTable__header {
+                                                    &:first-child {
+                                                        width: 30%;
+                                                    }
+                                                    &:nth-child(2) {
+                                                        width: 48%;
+                                                    }
+                                                }
+                                            }
+                                            .AchievementTableContent {
+                                                height: auto !important;
+                                                max-height: 180px;
+                                                overflow-y: scroll;
+                                                .AchievementList {
+                                                    display: flex;
+                                                    max-height: 60px;
+                                                    .AchievementList--label,
+                                                    .AchievementList--description {
+                                                        width: fit-content;
+                                                    }
+                                                    .AchievementList--label {
+                                                        width: 30%;
+                                                    }
+                                                    .AchievementList--description {
+                                                        width: 48%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

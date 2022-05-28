@@ -1,0 +1,30 @@
+.FooterArea {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    margin: 64px 0 32px 0;
+    .FooterContent {
+        display: flex;
+        justify-content: center;
+        .FooterContent_item {
+            @extend .text--title-4_caption;
+        }
+    }
+}
+
+
+/* 480px以下に適用されるCSS（スマホ用） */
+
+@media screen and (max-width: 480px) {
+    .FooterArea {
+        bottom: 50px;
+        margin: 24px auto;
+        .FooterContent {
+            .FooterContent_item {
+                font-size: 12px;
+            }
+        }
+    }
+}
