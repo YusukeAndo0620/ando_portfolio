@@ -5,7 +5,7 @@
         class="NavigationArea__logo"
         @click="clickNavigate(navigationList[0])"
       >
-        <img src="/assets/images/ando_logo.png" alt="" />
+        <img src="@/assets/img/ando_logo.png" alt="" />
       </div>
       <div
         class="NavigationContent__txt"

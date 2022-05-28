@@ -94,7 +94,7 @@ export default defineComponent({
     ]);
     const aboutContent = reactive<AboutContentType>({
       title: "About",
-      src: "/assets/images/profile.png",
+      src: require("@/assets/img/profile.png"),
       style: "",
       introductionList: [
         {

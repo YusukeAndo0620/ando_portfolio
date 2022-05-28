@@ -12,7 +12,7 @@
     >
       <div class="MainContentImgArea">
         <div class="MainContentImg">
-          <img src="/assets/images/back_1.jpg" alt="" />
+          <img src="@/assets/img/back_1.jpg" alt="" />
         </div>
       </div>
       <Stack
@@ -219,7 +219,7 @@ export default defineComponent({
 
     const aboutContent = reactive<AboutContentType>({
       title: "About",
-      src: "/assets/images/profile.png",
+      src: require("@/assets/img/profile.png"),
       style: "",
       introductionList: [
         {
@@ -490,7 +490,7 @@ export default defineComponent({
         subTitle: "works.content1.subTitle",
         description: "works.content1.description",
         period: "works.content1.period",
-        src: "/assets/images/life_insurance.jpeg",
+        src: require("@/assets/img/life_insurance.jpeg"),
         style: "",
         selected: true,
         developmentPhase: {
@@ -530,7 +530,7 @@ export default defineComponent({
         subTitle: "works.content2.subTitle",
         description: "works.content2.description",
         period: "works.content2.period",
-        src: "/assets/images/file_share.jpeg",
+        src: require("@/assets/img/file_share.jpeg"),
         style: "",
         selected: false,
         developmentPhase: {
@@ -594,7 +594,7 @@ export default defineComponent({
         subTitle: "works.content3.subTitle",
         description: "works.content3.description",
         period: "works.content3.period",
-        src: "/assets/images/supermarket.jpeg",
+        src: require("@/assets/img/supermarket.jpeg"),
         style: "",
         selected: false,
         developmentPhase: {
