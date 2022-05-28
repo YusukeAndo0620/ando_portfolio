@@ -1,6 +1,6 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-    publicPath: "ando_portfolio",
+    publicPath: "./",
     outputDir: "docs",
     assetsDir: "./",
     transpileDependencies: true,
