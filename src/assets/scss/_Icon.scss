@@ -1,0 +1,67 @@
+.Icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    &.Icon--s16 {
+        height: 16px;
+        width: 16px;
+    }
+    &.Icon--s18 {
+        height: 18px;
+        width: 18px;
+    }
+    &.Icon--s24 {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+:root.light-mode {
+    .Icon--skill {
+        background-image: url("../img/icon_skill_off.png");
+        &.Icon--skill__on {
+            background-image: url("../img/icon_skill.png");
+        }
+    }
+    .Icon--program {
+        background-image: url("../img/icon_programing.png");
+    }
+    .Icon--db {
+        background-image: url("../img/icon_db.png");
+    }
+    .Icon--infra {
+        background-image: url("../img/icon_infra.png");
+    }
+    .Icon--pc {
+        background-image: url("../img/icon_pc.png");
+    }
+    .Icon--mail {
+        background-image: url("../img/icon_mail.png");
+    }
+}
+
+:root.dark-mode {
+    .Icon--skill {
+        background-image: url("../img/icon_skill.png");
+        &.Icon--skill__on {
+            background-image: url("../img/icon_skill_off.png");
+        }
+    }
+    .Icon--program {
+        background-image: url("../img/icon_programing_off.png");
+    }
+    .Icon--db {
+        background-image: url("../img/icon_db_off.png");
+    }
+    .Icon--infra {
+        background-image: url("../img/icon_infra_off.png");
+    }
+    .Icon--pc {
+        background-image: url("../img/icon_note_pc_off.png");
+    }
+    .Icon--mail {
+        background-image: url("../img/icon_mail_off.png");
+    }
+}
