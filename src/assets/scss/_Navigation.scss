@@ -92,9 +92,10 @@
     .NavigationArea {
         display: flex;
         align-items: center;
-        top: 87%;
+        top: 90%;
         height: 90px;
-        margin: 0 4px;
+        width: 100%;
+        justify-content: center;
         .NavigationArea__content {
             margin: 0 4px;
             height: 100%;
