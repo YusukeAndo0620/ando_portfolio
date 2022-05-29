@@ -10,6 +10,7 @@
         class="Main--content"
         @click="isSettingOpen = false"
         @wheel="scrollDisplay"
+        @touchmove="scrollDisplay"
       >
         <div class="MainContentImgArea">
           <div class="MainContentImg">
