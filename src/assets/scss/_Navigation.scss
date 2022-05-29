@@ -149,6 +149,7 @@
     //アニメーション
     .NavigationArea--on {
         animation-name: navigationFadeIn;
+        animation-delay: 0.3s;
         animation-duration: 0.3s;
         animation-fill-mode: forwards;
         @keyframes navigationFadeIn {
