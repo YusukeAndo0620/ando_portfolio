@@ -95,6 +95,7 @@
         top: 90%;
         height: 200px;
         width: 100%;
+        transition: 0.3s;
         justify-content: center;
         .NavigationArea__content {
             margin: 0 4px;
@@ -126,6 +127,37 @@
                         display: none;
                     }
                 }
+            }
+        }
+    }
+    //アニメーション
+    .NavigationArea--off {
+        animation-name: navigationFadeout;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        @keyframes navigationFadeout {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translate3d(0%, -10%, 0);
+                display: none;
+            }
+        }
+    }
+    //アニメーション
+    .NavigationArea--on {
+        animation-name: navigationFadeIn;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        @keyframes navigationFadeIn {
+            0% {
+                opacity: 0;
+                transform: translate3d(0%, -10%, 0);
+            }
+            100% {
+                opacity: 1;
             }
         }
     }

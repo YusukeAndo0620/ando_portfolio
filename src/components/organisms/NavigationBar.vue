@@ -1,5 +1,11 @@
 <template>
-  <div class="NavigationArea">
+  <div
+    class="NavigationArea"
+    :class="[
+      { ' NavigationArea--off': isNotNavigationShow },
+      { ' NavigationArea--on': !isNotNavigationShow },
+    ]"
+  >
     <div class="NavigationArea__content">
       <div
         class="NavigationArea__logo"
@@ -42,6 +48,11 @@ export default defineComponent({
     navigationList: {
       type: Array as PropType<NavigationType[]>,
       required: true,
+    },
+    isNotNavigationShow: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
   },
   setup(props, { emit }) {

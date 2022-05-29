@@ -2,6 +2,7 @@
   <div>
     <NavigationBar
       :navigationList="navigationList"
+      :isNotNavigationShow="isNotNavigationShow"
       @clickNavigate="clickNavigate"
     />
     <div class="Main" :class="{ 'MainContennt--modal_open': isSettingOpen }">
@@ -174,6 +175,12 @@ export default defineComponent({
     const isWorksShow = ref(false);
     //Works表示フラグ
     const isContactShow = ref(false);
+
+    //スマホ スクロール時の位置
+    const targetYPosition = ref(0);
+
+    //スマホ メニューバー表示OFFフラグ
+    const isNotNavigationShow = ref(false);
 
     //モーダル表示フラグ
     const isModalOpen = ref(false);
@@ -783,6 +790,10 @@ export default defineComponent({
       }
 
       chengeNavChecked(targetId.value);
+
+      //スマホブラウザ メニューバー表示判定
+      isNotNavigationShow.value = targetYPosition.value < targetY;
+      targetYPosition.value = targetY;
     };
 
     //モーダル状態監視
@@ -806,6 +817,7 @@ export default defineComponent({
       isSkillShow,
       isWorksShow,
       isContactShow,
+      isNotNavigationShow,
       isModalOpen,
       isSettingOpen,
       navigationList,
