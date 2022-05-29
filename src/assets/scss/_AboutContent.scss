@@ -33,7 +33,7 @@
                         width: 180px;
                         text-align: left;
                     }
-                    .Introduction__description {}
+                    // .Introduction__description {}
                 }
             }
         }
@@ -48,12 +48,6 @@
                 .HistoryTable__header {
                     @extend .text--title-5;
                     width: 100px;
-                }
-                .HistoryTableContent {
-                    .History {
-                        .History__label {}
-                        .HistoryList__description {}
-                    }
                 }
             }
             .HistoryTable tr {
@@ -74,22 +68,21 @@
                     display: block;
                     height: fit-content;
                     .IntroductionImg {
-                        height: 100px;
+                        height: 160px;
                         img {
                             height: 100%;
                             object-fit: contain;
-                            margin-right: 24px;
                         }
                     }
                     .Introduction {
                         padding: 4px 0 4px 0;
                         @extend .text--title-5;
                         .Introduction__label {
-                            width: 100px;
-                            font-size: 8px;
+                            width: 140px;
+                            font-size: 14px;
                         }
                         .Introduction__description {
-                            font-size: 8px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -99,13 +92,13 @@
                 padding: 16px 0;
                 .HistoryTable {
                     font-size: 10x;
-                    line-height: 16px;
+                    line-height: 24px;
                     .HistoryTable__header {
-                        font-size: 10px;
-                        width: 40px;
+                        font-size: 14px;
+                        width: 65px;
                     }
                     .HistoryTableContent {
-                        font-size: 10px;
+                        font-size: 14px;
                     }
                 }
             }

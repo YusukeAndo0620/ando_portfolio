@@ -18,6 +18,9 @@ html {
         .MainContentImgArea {
             .MainContentImg {
                 width: 100%;
+                &.MainContentImg--responsive {
+                    display: none;
+                }
                 img {
                     width: 100%;
                     object-fit: contain;
@@ -62,7 +65,14 @@ html {
             width: -webkit-fill-available;
             z-index: 1;
             padding: 0 16px 16px 16px;
-            .MainContentImgArea {
+            margin-bottom: 120px;
+            .MainContentImg {
+                &:not(.MainContentImg--responsive) {
+                    display: none;
+                }
+                &.MainContentImg--responsive {
+                    display: block !important;
+                }
                 .MainContentImg {
                     width: 100%;
                     img {

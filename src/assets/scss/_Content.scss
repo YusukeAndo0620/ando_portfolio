@@ -23,15 +23,12 @@
                 opacity: 1;
                 z-index: -1;
                 border-bottom: 3px solid $color-deep-blue--main;
-                &.Content__title--border--on {}
             }
         }
-        &.Content__title--on {}
     }
     .ContentArea {
         min-height: 500px;
         opacity: 0;
-        &.ContentArea--on {}
     }
 }
 
@@ -115,14 +112,13 @@
             margin-top: 32px;
         }
         .Content__title {
-            font-size: 12px;
             margin-bottom: 16px;
             &.Content__title--mt24 {
                 margin-top: 24px;
             }
         }
         .ContentArea {
-            min-height: 400px;
+            min-height: 300px;
             opacity: 0;
         }
     }

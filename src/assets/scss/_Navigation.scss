@@ -90,22 +90,30 @@
 
 @media screen and (max-width: 480px) {
     .NavigationArea {
-        top: 93%;
-        height: 50px;
+        display: flex;
+        align-items: center;
+        top: 87%;
+        height: 90px;
         .NavigationArea__content {
-            margin: 0 8px;
+            margin: 0 4px;
+            height: 100%;
             .NavigationArea__logo {
+                margin-right: 4px;
                 img {
-                    height: 20px;
+                    height: 28px;
                 }
             }
             .NavigationContent__txt {
-                font-size: 10px;
+                display: none;
+                width: fit-content;
+                font-size: 14px;
             }
             ul {
+                justify-content: left;
+                align-items: center;
                 li {
-                    font-size: 12px;
-                    width: 50px;
+                    font-size: 16px;
+                    width: 65px;
                      :hover {
                         font-weight: initial;
                         cursor: none;

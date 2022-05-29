@@ -1,131 +1,136 @@
 <template>
-  <NavigationBar
-    :navigationList="navigationList"
-    @clickNavigate="clickNavigate"
-  />
-  <div class="Main" :class="{ 'MainContennt--modal_open': isSettingOpen }">
-    <div
-      id="home"
-      class="Main--content"
-      @click="isSettingOpen = false"
-      @wheel="scrollDisplay"
-    >
-      <div class="MainContentImgArea">
-        <div class="MainContentImg">
-          <img src="@/assets/img/back_1.jpg" alt="" />
-        </div>
-      </div>
-      <Stack
-        :isShowFlg="isAboutShow"
-        title="About"
-        titleStyle="Content__title--mt24"
-        contentId="about"
+  <div>
+    <NavigationBar
+      :navigationList="navigationList"
+      @clickNavigate="clickNavigate"
+    />
+    <div class="Main" :class="{ 'MainContennt--modal_open': isSettingOpen }">
+      <div
+        id="home"
+        class="Main--content"
+        @click="isSettingOpen = false"
+        @wheel="scrollDisplay"
       >
-        <template #content>
-          <AboutContent :aboutContent="aboutContent" :isHistoryShow="true" />
-        </template>
-      </Stack>
-      <Stack :isShowFlg="isSkillShow" title="SKill" contentId="skill">
-        <template #content>
-          <div class="SkillContentArea">
-            <SkillContent
-              v-for="(skillContent, skillContentidx) in skillContentList"
-              :key="skillContentidx"
-              :skillContent="skillContent"
-            />
-            <div class="SkillDescriptionArea">
-              <div class="SkillDescriptionContent">
-                <div class="SkillDescriptionContent__item">
-                  <div class="SkillDescriptionContentItem__icon">
-                    <div
-                      v-for="(number, numberIdx) in 5"
-                      :key="numberIdx"
-                      class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                    ></div>
+        <div class="MainContentImgArea">
+          <div class="MainContentImg">
+            <img src="@/assets/img/back_1.jpg" alt="" />
+          </div>
+          <div class="MainContentImg MainContentImg--responsive">
+            <img src="@/assets/img/responsive_back.jpg" alt="" />
+          </div>
+        </div>
+        <Stack
+          :isShowFlg="isAboutShow"
+          title="About"
+          titleStyle="Content__title--mt24"
+          contentId="about"
+        >
+          <template #content>
+            <AboutContent :aboutContent="aboutContent" :isHistoryShow="true" />
+          </template>
+        </Stack>
+        <Stack :isShowFlg="isSkillShow" title="SKill" contentId="skill">
+          <template #content>
+            <div class="SkillContentArea">
+              <SkillContent
+                v-for="(skillContent, skillContentidx) in skillContentList"
+                :key="skillContentidx"
+                :skillContent="skillContent"
+              />
+              <div class="SkillDescriptionArea">
+                <div class="SkillDescriptionContent">
+                  <div class="SkillDescriptionContent__item">
+                    <div class="SkillDescriptionContentItem__icon">
+                      <div
+                        v-for="(number, numberIdx) in 5"
+                        :key="numberIdx"
+                        class="Icon Icon--s16 Icon--skill Icon--skill__on"
+                      ></div>
+                    </div>
+                    <div class="SkillDescriptionContentItem__txt">
+                      <span v-html="$t('skill.skillDescription.level5')"></span>
+                    </div>
                   </div>
-                  <div class="SkillDescriptionContentItem__txt">
-                    <span v-html="$t('skill.skillDescription.level5')"></span>
+                  <div class="SkillDescriptionContent__item">
+                    <div class="SkillDescriptionContentItem__icon">
+                      <div
+                        v-for="(number, numberIdx) in 4"
+                        :key="numberIdx"
+                        class="Icon Icon--s16 Icon--skill Icon--skill__on"
+                      ></div>
+                    </div>
+                    <div class="SkillDescriptionContentItem__txt">
+                      <span v-html="$t('skill.skillDescription.level4')"></span>
+                    </div>
                   </div>
-                </div>
-                <div class="SkillDescriptionContent__item">
-                  <div class="SkillDescriptionContentItem__icon">
-                    <div
-                      v-for="(number, numberIdx) in 4"
-                      :key="numberIdx"
-                      class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                    ></div>
+                  <div class="SkillDescriptionContent__item">
+                    <div class="SkillDescriptionContentItem__icon">
+                      <div
+                        v-for="(number, numberIdx) in 3"
+                        :key="numberIdx"
+                        class="Icon Icon--s16 Icon--skill Icon--skill__on"
+                      ></div>
+                    </div>
+                    <div class="SkillDescriptionContentItem__txt">
+                      <span v-html="$t('skill.skillDescription.level3')"></span>
+                    </div>
                   </div>
-                  <div class="SkillDescriptionContentItem__txt">
-                    <span v-html="$t('skill.skillDescription.level4')"></span>
+                  <div class="SkillDescriptionContent__item">
+                    <div class="SkillDescriptionContentItem__icon">
+                      <div
+                        v-for="(number, numberIdx) in 2"
+                        :key="numberIdx"
+                        class="Icon Icon--s16 Icon--skill Icon--skill__on"
+                      ></div>
+                    </div>
+                    <div class="SkillDescriptionContentItem__txt">
+                      <span v-html="$t('skill.skillDescription.level2')"></span>
+                    </div>
                   </div>
-                </div>
-                <div class="SkillDescriptionContent__item">
-                  <div class="SkillDescriptionContentItem__icon">
-                    <div
-                      v-for="(number, numberIdx) in 3"
-                      :key="numberIdx"
-                      class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                    ></div>
-                  </div>
-                  <div class="SkillDescriptionContentItem__txt">
-                    <span v-html="$t('skill.skillDescription.level3')"></span>
-                  </div>
-                </div>
-                <div class="SkillDescriptionContent__item">
-                  <div class="SkillDescriptionContentItem__icon">
-                    <div
-                      v-for="(number, numberIdx) in 2"
-                      :key="numberIdx"
-                      class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                    ></div>
-                  </div>
-                  <div class="SkillDescriptionContentItem__txt">
-                    <span v-html="$t('skill.skillDescription.level2')"></span>
-                  </div>
-                </div>
-                <div class="SkillDescriptionContent__item">
-                  <div class="SkillDescriptionContentItem__icon">
-                    <div
-                      v-for="(number, numberIdx) in 1"
-                      :key="numberIdx"
-                      class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                    ></div>
-                  </div>
-                  <div class="SkillDescriptionContentItem__txt">
-                    <span v-html="$t('skill.skillDescription.level1')"></span>
+                  <div class="SkillDescriptionContent__item">
+                    <div class="SkillDescriptionContentItem__icon">
+                      <div
+                        v-for="(number, numberIdx) in 1"
+                        :key="numberIdx"
+                        class="Icon Icon--s16 Icon--skill Icon--skill__on"
+                      ></div>
+                    </div>
+                    <div class="SkillDescriptionContentItem__txt">
+                      <span v-html="$t('skill.skillDescription.level1')"></span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </template>
-      </Stack>
-      <Stack :isShowFlg="isWorksShow" title="Works" contentId="works">
-        <template #content>
-          <WorksContent
-            :worksContentList="worksContentList"
-            :isImgShow="false"
-            @clickWork="clickWork"
-          />
-        </template>
-      </Stack>
-      <Stack
-        :isShowFlg="isContactShow"
-        title="Contact"
-        titleStyle="Content__title--mt24"
-        contentId="contact"
-      >
-        <template #content>
-          <ContactContent @clickContent="clickContent" />
-        </template>
-      </Stack>
+          </template>
+        </Stack>
+        <Stack :isShowFlg="isWorksShow" title="Works" contentId="works">
+          <template #content>
+            <WorksContent
+              :worksContentList="worksContentList"
+              :isImgShow="false"
+              @clickWork="clickWork"
+            />
+          </template>
+        </Stack>
+        <Stack
+          :isShowFlg="isContactShow"
+          title="Contact"
+          titleStyle="Content__title--mt24"
+          contentId="contact"
+        >
+          <template #content>
+            <ContactContent @clickContent="clickContent" />
+          </template>
+        </Stack>
+        <FooterContent v-if="isContactShow" />
+      </div>
+      <SettingModal
+        v-if="isModalOpen"
+        :isModalOpen="isSettingOpen"
+        @clickClose="isSettingOpen = false"
+      />
     </div>
-    <SettingModal
-      v-if="isModalOpen"
-      :isModalOpen="isSettingOpen"
-      @clickClose="isSettingOpen = false"
-    />
-    <Footer v-if="isContactShow" />
   </div>
 </template>
 
@@ -140,7 +145,7 @@ import SkillContent from "@/components/organisms/SkillContent.vue";
 import ContactContent from "@/components/organisms/ContactContent.vue";
 
 import SettingModal from "@/components/organisms/modal/Settings.vue";
-import Footer from "@/components/organisms/Footer.vue";
+import FooterContent from "@/components/organisms/Footer.vue";
 import _ from "lodash";
 import { NavigationType } from "@/interface/navigation";
 import { AboutContentType } from "@/interface/aboutContent";
@@ -157,11 +162,11 @@ export default defineComponent({
     SkillContent,
     ContactContent,
     SettingModal,
-    Footer,
+    FooterContent,
   },
   setup() {
     //About表示フラグ
-    const isAboutShow = ref(true);
+    const isAboutShow = ref(false);
     //Skill表示フラグ
     const isSkillShow = ref(false);
     //Works表示フラグ
@@ -638,16 +643,6 @@ export default defineComponent({
 
     //スクロール時のナビゲーション選択状態変更
     const chengeNavChecked = (targetId: string) => {
-      // const targetId = ref("");
-      // if (targetY > 2960) {
-      //   targetId.value = "contact";
-      // } else if (targetY > 2200) {
-      //   targetId.value = "works";
-      // } else if (targetY > 460) {
-      //   targetId.value = "about";
-      // } else {
-      //   targetId.value = "home";
-      // }
       for (const item of navigationList.value) {
         if (_.isEqual(item.id, targetId)) {
           item.selected = true;
@@ -757,7 +752,7 @@ export default defineComponent({
           window.pageYOffset + contactTarget.getBoundingClientRect().top - 200;
       }
 
-      if (targetY > aboutPosition.value) {
+      if (targetY > 0) {
         targetId.value = "about";
         if (!isAboutShow.value) {
           isAboutShow.value = true;

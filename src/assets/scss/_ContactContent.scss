@@ -53,7 +53,7 @@
         .ContactArea {
             .ContactArea__header {
                 .ContactHeader__description {
-                    font-size: 12px;
+                    font-size: 16px;
                 }
             }
             .ContactArea__content {
@@ -76,13 +76,11 @@
                         }
                     }
                     .ContactContentBtnArea__msg {
-                        @extend .text--title-2;
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                 }
                 .ContactContent__description {
-                    @extend .text--title-2;
-                    font-size: 12px;
+                    font-size: 16px;
                 }
             }
         }

@@ -245,57 +245,51 @@
                         .WorksContentDetailStack {
                             margin: 16px 0 16px 0;
                             text-align: left;
-                            @extend .text--title-5;
-                            font-size: 10px;
+                            font-size: 16px;
+                            .WorksContentDetailStack__title {
+                                width: 20%;
+                                margin-right: 16px;
+                            }
                             .WorksContentDetailStack__content {
                                 width: 85%;
                                 .WorksContentDetail__title {
                                     .title {
                                         padding-bottom: 8px;
                                     }
-                                    .caption {
-                                        @extend .text--title-6__caption;
-                                        font-size: 10px;
-                                    }
                                 }
                                 .WorksContentDetail__discription {
                                     text-align: left;
                                     .WorksContentDetail__discription--text {
-                                        @extend .text--title-5;
-                                        font-size: 10px;
+                                        font-size: 16px;
                                     }
                                 }
                                 .WorksContentDetail__period {
                                     text-align: left;
                                     .WorksContentDetail__period--text {
-                                        @extend .text--title-5;
-                                        font-size: 10px;
+                                        font-size: 16px;
                                     }
                                 }
                             }
                         }
                         .WorksContentDetailStack--vertical {
-                            @extend .text--title-5;
-                            font-size: 10px;
+                            font-size: 16px;
                             .WorksContentDetailStack__achievement-description {
-                                font-size: 10px;
+                                font-size: 12px;
                             }
                             .WorksContentDetailStack__content--vertical {
                                 //開発フェーズ
                                 .WorksContentDevelopmentPhaseArea {
                                     margin-top: 16px;
                                     .WorksContentDevelopmentPhase__content {
-                                        @extend .text--title-5;
-                                        font-size: 10px;
+                                        font-size: 16px;
                                         .DevelopmentPhaseTable {
                                             display: flex;
                                             justify-content: center;
                                             margin: 0;
-                                            @extend .text--title-6;
-                                            font-size: 8px;
+                                            font-size: 16px;
                                             .DevelopmentPhaseTableHeader,
                                             .DevelopmentPhase {
-                                                line-height: 20px;
+                                                line-height: 24px;
                                                 border-bottom: none;
                                             }
                                             .DevelopmentPhaseTableHeader {
@@ -317,7 +311,7 @@
                                                     display: block;
                                                     .DevelopmentPhaseItem {
                                                         display: flex;
-                                                        height: 20px;
+                                                        height: 24px;
                                                         width: auto;
                                                         justify-content: left;
                                                         align-items: center;
@@ -326,8 +320,8 @@
                                                             border-top: 1px solid $color-deep-blue--main;
                                                         }
                                                         .DevelopmentPhaseItem__on {
-                                                            width: 10px;
-                                                            height: 10px;
+                                                            width: 16px;
+                                                            height: 16px;
                                                             background-color: $color--background-main;
                                                             border-radius: 50%;
                                                             border: 1px solid $color-deep-blue--main;
@@ -343,11 +337,9 @@
                                 //実績
                                 .WorksContentAchievementArea {
                                     .WorksContentAchievement__content {
-                                        @extend .text--title-5;
-                                        font-size: 10px;
+                                        font-size: 14px;
                                         .AchievementTable {
-                                            @extend .text--title-6;
-                                            font-size: 10px;
+                                            font-size: 14px;
                                             .AchievementTableHeader,
                                             .AchievementList {
                                                 line-height: 20px;

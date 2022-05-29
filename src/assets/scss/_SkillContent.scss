@@ -15,7 +15,6 @@
                 .SkillHeader__title-icon {
                     margin: 0 8px;
                 }
-                .SkillHeader__title-txt {}
             }
             .SkillHeader__description {
                 @extend .text--title-5;
@@ -105,18 +104,27 @@
                 .SkillHeader__title {
                     align-items: center;
                     .SkillHeader__title-txt {
-                        font-size: 12px;
+                        font-size: 16px;
                     }
                 }
                 .SkillHeader__description {
-                    font-size: 10px;
+                    font-size: 14px;
                 }
             }
             .SkillContent {
-                font-size: 10px;
+                font-size: 14px;
                 .SkillContentHeader {
-                    font-size: 10px;
+                    font-size: 14px;
                     padding: 0px 0px 16px 0px;
+                    .SkillContentHeader__label {
+                        width: 40%;
+                    }
+                    .SkillContentHeader__experience {
+                        width: 21%;
+                    }
+                    .SkillContentHeader__level {
+                        width: 39%;
+                    }
                 }
                 .SkillContentItem {
                     padding: 0;
@@ -128,14 +136,15 @@
                 padding: 0 8px;
                 .SkillDescriptionContent__item {
                     .SkillDescriptionContentItem__icon {
-                        width: 70px;
+                        width: 100px;
                         .Icon {
-                            height: 12px;
-                            width: 12px;
+                            height: 16px;
+                            width: 16px;
                         }
                     }
                     .SkillDescriptionContentItem__txt {
-                        font-size: 10px;
+                        width: 75%;
+                        font-size: 14px;
                     }
                 }
             }
