@@ -129,9 +129,6 @@
                 }
             }
         }
-        &.NavigationArea--on {
-            opacity: 0;
-        }
     }
     //アニメーション
     .NavigationArea--off {
@@ -146,22 +143,6 @@
                 opacity: 0;
                 transform: translate3d(0%, -10%, 0);
                 display: none;
-            }
-        }
-    }
-    //アニメーション
-    .NavigationArea--on {
-        animation-name: navigationFadeIn;
-        animation-delay: 0.5s;
-        animation-duration: 0.3s;
-        animation-fill-mode: forwards;
-        @keyframes navigationFadeIn {
-            0% {
-                opacity: 0;
-                transform: translate3d(0%, -10%, 0);
-            }
-            100% {
-                opacity: 1;
             }
         }
     }

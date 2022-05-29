@@ -1,10 +1,7 @@
 <template>
   <div
     class="NavigationArea"
-    :class="[
-      { ' NavigationArea--off': isNotNavigationShow },
-      { ' NavigationArea--on': !isNotNavigationShow },
-    ]"
+    :class="[{ ' NavigationArea--off': isNotNavigationShow }]"
   >
     <div class="NavigationArea__content">
       <div
