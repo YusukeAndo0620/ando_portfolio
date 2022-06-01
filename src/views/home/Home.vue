@@ -15,10 +15,7 @@
       >
         <div class="MainContentImgArea">
           <div class="MainContentImg">
-            <img src="@/assets/img/back_1.jpg" alt="" />
-          </div>
-          <div class="MainContentImg MainContentImg--responsive">
-            <img src="@/assets/img/responsive_back.jpg" alt="" />
+            <img src="@/assets/img/top_ground.png" alt="" />
           </div>
         </div>
         <Stack
@@ -309,37 +306,37 @@ export default defineComponent({
         contentList: [
           {
             label: "HTML",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "CSS",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "Javascript",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "Typescript",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "SCSS",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "Java",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
@@ -353,62 +350,62 @@ export default defineComponent({
         contentList: [
           {
             label: "Slack",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "ZOOM",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "VSCode",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
 
           {
             label: "Teams",
-            experience: 1,
+            experience: 12,
             level: 4,
             style: "",
           },
           {
             label: "SorceTree",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "TortoseGit",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
-            label: "figma",
-            experience: 2,
+            label: "Figma",
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "A5",
-            experience: 2,
+            experience: 24,
             level: 3,
             style: "",
           },
           {
-            label: "eclipse",
-            experience: 2,
+            label: "Eclipse",
+            experience: 24,
             level: 3,
             style: "",
           },
           {
-            label: "intelij",
-            experience: 1,
+            label: "Intellij",
+            experience: 12,
             level: 3,
             style: "",
           },
@@ -422,13 +419,13 @@ export default defineComponent({
         contentList: [
           {
             label: "Vue.js(Vue3)",
-            experience: 2,
+            experience: 12,
             level: 5,
             style: "",
           },
           {
             label: "Edge.js",
-            experience: 1,
+            experience: 12,
             level: 2,
             style: "",
           },
@@ -442,13 +439,13 @@ export default defineComponent({
         contentList: [
           {
             label: "Spring Boot",
-            experience: 2,
+            experience: 24,
             level: 4,
             style: "",
           },
           {
             label: "Struts",
-            experience: 1,
+            experience: 3,
             level: 2,
             style: "",
           },
@@ -462,19 +459,19 @@ export default defineComponent({
         contentList: [
           {
             label: "MySQL",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "Mybatis",
-            experience: 2,
+            experience: 24,
             level: 5,
             style: "",
           },
           {
             label: "Oracle",
-            experience: 1,
+            experience: 12,
             level: 3,
             style: "",
           },
@@ -487,8 +484,8 @@ export default defineComponent({
         style: "",
         contentList: [
           {
-            label: "aws(EC2, S3 etc)",
-            experience: 2,
+            label: "AWS(EC2, S3 etc)",
+            experience: 12,
             level: 2,
             style: "",
           },
@@ -503,7 +500,7 @@ export default defineComponent({
         subTitle: "works.content1.subTitle",
         description: "works.content1.description",
         period: "works.content1.period",
-        src: require("@/assets/img/life_insurance.jpeg"),
+        src: require("@/assets/img/insurance.svg"),
         style: "",
         selected: true,
         developmentPhase: {
@@ -543,7 +540,7 @@ export default defineComponent({
         subTitle: "works.content2.subTitle",
         description: "works.content2.description",
         period: "works.content2.period",
-        src: require("@/assets/img/file_share.jpeg"),
+        src: require("@/assets/img/file_sharing.svg"),
         style: "",
         selected: false,
         developmentPhase: {
@@ -607,7 +604,7 @@ export default defineComponent({
         subTitle: "works.content3.subTitle",
         description: "works.content3.description",
         period: "works.content3.period",
-        src: require("@/assets/img/supermarket.jpeg"),
+        src: require("@/assets/img/shopping.svg"),
         style: "",
         selected: false,
         developmentPhase: {

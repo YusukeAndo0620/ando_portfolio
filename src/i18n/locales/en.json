@@ -63,7 +63,9 @@
             "experience": "Experience",
             "level": "Level",
             "year": "year",
-            "years": "years"
+            "years": "years",
+            "month": "month",
+            "months": "months"
         },
         "language": {
             "title": "Language",

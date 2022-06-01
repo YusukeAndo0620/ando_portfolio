@@ -31,11 +31,15 @@
       >
         <div class="SkillContentItem__label">{{ item.label }}</div>
         <div class="SkillContentItem__experience">
-          {{ item.experience }}
+          {{ item.experience >= 12 ? item.experience / 12 : item.experience }}
           {{
-            item.experience > 1
+            item.experience / 12 > 1
               ? $t("skill.common.years")
-              : $t("skill.common.year")
+              : item.experience / 12 === 1
+              ? $t("skill.common.year")
+              : item.experience > 1
+              ? $t("skill.common.months")
+              : $t("skill.common.month")
           }}
         </div>
         <div class="SkillContentItem__level">
