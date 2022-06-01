@@ -1,9 +1,10 @@
 <template>
   <div class="ContactArea">
     <div class="ContactArea__header">
-      <div class="ContactHeader__description">
-        {{ $t("contact.description") }}
-      </div>
+      <div
+        class="ContactHeader__description"
+        v-html="$t('contact.description')"
+      ></div>
     </div>
     <div class="ContactArea__content">
       <div class="ContactContentBtnArea">

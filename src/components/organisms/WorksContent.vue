@@ -9,7 +9,11 @@
         :key="contentItemIdx"
         class="WorksContentMenu__item"
       >
-        <div class="WorksContentDetail__img" @click="clickWork(contentItem)">
+        <div
+          class="WorksContentDetail__img"
+          @click="clickWork(contentItem)"
+          @touchend="clickWork(contentItem)"
+        >
           <img
             v-if="!$_.isEmpty(contentItem.src)"
             :src="contentItem.src"

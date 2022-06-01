@@ -214,7 +214,7 @@
         }
     },
     "contact": {
-        "description": "何かありましたらこちらからご連絡をお願い致します。",
+        "description": "何かありましたら<br>こちらからご連絡をお願い致します。",
         "message": "送信",
         "contentDescription": "メールアドレス：",
         "part": "ando08620",
