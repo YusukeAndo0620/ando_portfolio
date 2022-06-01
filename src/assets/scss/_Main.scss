@@ -59,9 +59,9 @@ html {
     .Main {
         top: 0;
         padding-bottom: 24px;
+        max-width: -webkit-fill-available;
         .Main--content {
             min-height: 1200px;
-            width: -webkit-fill-available;
             z-index: 1;
             padding: 0 16px 16px 16px;
             margin-bottom: 100px;
