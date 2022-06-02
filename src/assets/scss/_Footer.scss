@@ -6,10 +6,20 @@
     width: 100%;
     margin: 64px 0 32px 0;
     .FooterContent {
-        display: flex;
-        justify-content: center;
         .FooterContent_item {
-            @extend .text--title-4_caption;
+            display: flex;
+            justify-content: center;
+            &:not(:first-child) {
+                margin-top: 16px;
+            }
+            span {
+                @extend .text--title-4_caption;
+            }
+            .Icon--github {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
@@ -19,11 +29,18 @@
 
 @media screen and (max-width: 480px) {
     .FooterArea {
-        bottom: 200px;
+        bottom: 150px;
         margin: 24px auto;
         .FooterContent {
             .FooterContent_item {
-                font-size: 12px;
+                span {
+                    font-size: 12px;
+                }
+                .Icon--github {
+                    &:hover {
+                        cursor: none;
+                    }
+                }
             }
         }
     }

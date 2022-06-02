@@ -16,6 +16,10 @@
         height: 24px;
         width: 24px;
     }
+    &.Icon--s28 {
+        height: 28px;
+        width: 28px;
+    }
 }
 
 :root.light-mode {
@@ -40,6 +44,9 @@
     .Icon--mail {
         background-image: url("../img/icon_mail.png");
     }
+    .Icon--github {
+        background-image: url("../img/github-mark.png");
+    }
 }
 
 :root.dark-mode {
@@ -63,5 +70,8 @@
     }
     .Icon--mail {
         background-image: url("../img/icon_mail_off.png");
+    }
+    .Icon--github {
+        background-image: url("../img/github-mark_dark.png");
     }
 }
