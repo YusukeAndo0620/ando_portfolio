@@ -11,7 +11,7 @@
         class="Main--content"
         @click="isSettingOpen = false"
         @wheel="scrollDisplay"
-        @touchmove="scrollDisplay"
+        @touchend="scrollDisplay"
       >
         <div class="MainContentImgArea">
           <div class="MainContentImg">
