@@ -92,10 +92,9 @@
     .NavigationArea {
         display: flex;
         align-items: center;
-        // top: calc(90% - env(safe-area-inset-bottom));
         top: auto !important;
         bottom: env(safe-area-inset-bottom);
-        height: 200px;
+        height: 100px;
         width: 100%;
         transition: 0.3s;
         justify-content: center;
@@ -103,7 +102,7 @@
             margin: 0 4px;
             height: fit-content;
             position: absolute;
-            top: 7%;
+            top: 15%;
             .NavigationArea__logo {
                 margin-right: 4px;
                 img {
