@@ -171,6 +171,7 @@
                                             .AchievementTable__header {
                                                 &:first-child {
                                                     width: 35%;
+                                                    padding-right: 4px;
                                                 }
                                                 &:nth-child(2) {
                                                     width: 50%;
@@ -188,6 +189,7 @@
                                                 }
                                                 .AchievementList--label {
                                                     width: 35%;
+                                                    padding-right: 4px;
                                                 }
                                                 .AchievementList--description {
                                                     width: 50%;
@@ -365,7 +367,7 @@
                                             }
                                             .AchievementTableContent {
                                                 height: auto !important;
-                                                max-height: 300px;
+                                                max-height: 360px;
                                                 overflow-y: scroll;
                                                 .AchievementList {
                                                     display: flex;
