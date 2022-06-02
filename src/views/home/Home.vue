@@ -789,8 +789,12 @@ export default defineComponent({
       chengeNavChecked(targetId.value);
 
       //スマホブラウザ メニューバー表示判定
-      isNotNavigationShow.value = targetYPosition.value <= targetY - 30;
-      targetYPosition.value = targetY;
+      if (targetYPosition.value <= targetY - 30) {
+        isNotNavigationShow.value = true;
+        targetYPosition.value = targetY;
+      } else {
+        isNotNavigationShow.value = false;
+      }
     };
 
     //モーダル状態監視
