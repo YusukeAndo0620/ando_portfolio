@@ -92,7 +92,9 @@
     .NavigationArea {
         display: flex;
         align-items: center;
-        top: calc(90% - env(safe-area-inset-bottom));
+        // top: calc(90% - env(safe-area-inset-bottom));
+        top: auto !important;
+        bottom: env(safe-area-inset-bottom);
         height: 200px;
         width: 100%;
         transition: 0.3s;
