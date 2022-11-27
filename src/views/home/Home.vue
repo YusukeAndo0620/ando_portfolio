@@ -44,10 +44,10 @@
                         v-for="(number, numberIdx) in 5"
                         :key="numberIdx"
                         class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                      ></div>
+                      />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
-                      <span v-html="$t('skill.skillDescription.level5')"></span>
+                      <span v-html="$t('skill.skillDescription.level5')" />
                     </div>
                   </div>
                   <div class="SkillDescriptionContent__item">
@@ -56,7 +56,7 @@
                         v-for="(number, numberIdx) in 4"
                         :key="numberIdx"
                         class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                      ></div>
+                      />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
                       <span v-html="$t('skill.skillDescription.level4')"></span>
@@ -68,7 +68,7 @@
                         v-for="(number, numberIdx) in 3"
                         :key="numberIdx"
                         class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                      ></div>
+                      />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
                       <span v-html="$t('skill.skillDescription.level3')"></span>
@@ -80,10 +80,10 @@
                         v-for="(number, numberIdx) in 2"
                         :key="numberIdx"
                         class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                      ></div>
+                      />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
-                      <span v-html="$t('skill.skillDescription.level2')"></span>
+                      <span v-html="$t('skill.skillDescription.level2')" />
                     </div>
                   </div>
                   <div class="SkillDescriptionContent__item">
@@ -92,7 +92,7 @@
                         v-for="(number, numberIdx) in 1"
                         :key="numberIdx"
                         class="Icon Icon--s16 Icon--skill Icon--skill__on"
-                      ></div>
+                      />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
                       <span v-html="$t('skill.skillDescription.level1')"></span>

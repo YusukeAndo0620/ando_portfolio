@@ -114,49 +114,49 @@
                           <div
                             v-if="selectedItem.developmentPhase.definition"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.basicDesign"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.detailDesign"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.coding"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.unitTest"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.integrationTest"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.systemTest"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                         <div class="DevelopmentPhaseItem">
                           <div
                             v-if="selectedItem.developmentPhase.maintenance"
                             class="DevelopmentPhaseItem__on"
-                          ></div>
+                          />
                         </div>
                       </div>
                     </div>

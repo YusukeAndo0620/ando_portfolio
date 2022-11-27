@@ -4,7 +4,7 @@
       <div
         class="ContactHeader__description"
         v-html="$t('contact.description')"
-      ></div>
+      />
     </div>
     <div class="ContactArea__content">
       <div class="ContactContentBtnArea">
@@ -12,7 +12,7 @@
           <div class="ContactContentBtnArea__btn-Area">
             <div
               class="ContactContentBtnArea__icon Icon Icon--s24 Icon--mail"
-            ></div>
+            />
             <div class="ContactContentBtnArea__msg">
               {{ $t("contact.message") }}
             </div>
