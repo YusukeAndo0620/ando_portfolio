@@ -5,7 +5,7 @@
         <div class="HeaderArea">
           <div class="HeaderArea__titile">{{ $t("setting.title") }}</div>
           <div class="HeaderArea__close" @click="clickClose">
-            <span class="close"></span>
+            <span class="close" />
           </div>
         </div>
       </div>
@@ -62,10 +62,6 @@ localize({
 export default defineComponent({
   name: "SettingsContent",
   props: {
-    contentList: {
-      type: String,
-      required: true,
-    },
     isModalOpen: {
       type: Boolean,
       required: false,

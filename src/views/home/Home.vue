@@ -1,8 +1,8 @@
 <template>
   <div>
     <NavigationBar
-      :navigationList="navigationList"
-      :isNotNavigationShow="isNotNavigationShow"
+      :navigation-list="navigationList"
+      :is-not-navigation-show="isNotNavigationShow"
       @clickNavigate="clickNavigate"
     />
     <div class="Main" :class="{ 'MainContennt--modal_open': isSettingOpen }">
@@ -19,22 +19,25 @@
           </div>
         </div>
         <Stack
-          :isShowFlg="isAboutShow"
+          :is-show-flg="isAboutShow"
           title="About"
-          titleStyle="Content__title--mt24"
-          contentId="about"
+          title-style="Content__title--mt24"
+          content-id="about"
         >
           <template #content>
-            <AboutContent :aboutContent="aboutContent" :isHistoryShow="true" />
+            <AboutContent
+              :about-content="aboutContent"
+              :is-history-show="true"
+            />
           </template>
         </Stack>
-        <Stack :isShowFlg="isSkillShow" title="SKill" contentId="skill">
+        <Stack :is-show-flg="isSkillShow" title="SKill" content-id="skill">
           <template #content>
             <div class="SkillContentArea">
               <SkillContent
                 v-for="(skillContent, skillContentidx) in skillContentList"
                 :key="skillContentidx"
-                :skillContent="skillContent"
+                :skill-content="skillContent"
               />
               <div class="SkillDescriptionArea">
                 <div class="SkillDescriptionContent">
@@ -59,7 +62,7 @@
                       />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
-                      <span v-html="$t('skill.skillDescription.level4')"></span>
+                      <span v-html="$t('skill.skillDescription.level4')" />
                     </div>
                   </div>
                   <div class="SkillDescriptionContent__item">
@@ -71,7 +74,7 @@
                       />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
-                      <span v-html="$t('skill.skillDescription.level3')"></span>
+                      <span v-html="$t('skill.skillDescription.level3')" />
                     </div>
                   </div>
                   <div class="SkillDescriptionContent__item">
@@ -95,7 +98,7 @@
                       />
                     </div>
                     <div class="SkillDescriptionContentItem__txt">
-                      <span v-html="$t('skill.skillDescription.level1')"></span>
+                      <span v-html="$t('skill.skillDescription.level1')" />
                     </div>
                   </div>
                 </div>
@@ -103,30 +106,30 @@
             </div>
           </template>
         </Stack>
-        <Stack :isShowFlg="isWorksShow" title="Works" contentId="works">
+        <Stack :is-show-flg="isWorksShow" title="Works" contentId="works">
           <template #content>
             <WorksContent
-              :worksContentList="worksContentList"
-              :isImgShow="false"
+              :works-content-list="worksContentList"
+              :is-img-show="false"
               @clickWork="clickWork"
             />
           </template>
         </Stack>
         <Stack
-          :isShowFlg="isContactShow"
+          :is-show-flg="isContactShow"
           title="Contact"
-          titleStyle="Content__title--mt24"
-          contentId="contact"
+          title-style="Content__title--mt24"
+          content-id="contact"
         >
           <template #content>
-            <ContactContent @clickContent="clickContent" />
+            <ContactContent />
           </template>
         </Stack>
         <FooterContent v-if="isContactShow" />
       </div>
       <SettingModal
         v-if="isModalOpen"
-        :isModalOpen="isSettingOpen"
+        :is-modal-open="isSettingOpen"
         @clickClose="isSettingOpen = false"
       />
     </div>

@@ -9,7 +9,7 @@
           class="Icon Icon--s28 Icon--github"
           @click="navigateGithub"
           @touchend="navigateGithub"
-        ></div>
+        />
       </div>
     </div>
   </footer>
@@ -20,8 +20,7 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "FooterContent",
-  props: {},
-  setup(props) {
+  setup() {
     const navigateGithub = () => {
       window.open("https://github.com/YusukeAndo0620/ando_portfolio", "_blank");
     };

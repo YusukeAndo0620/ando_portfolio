@@ -58,7 +58,7 @@
               <div
                 v-html="$t(item.description)"
                 class="HistoryList__description"
-              ></div>
+              />
             </td>
           </tr>
         </tbody>
